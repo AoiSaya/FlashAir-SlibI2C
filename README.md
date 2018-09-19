@@ -34,4 +34,3 @@ res, data, ctrl = I2C:getpio()|**I2C get pio**<br>**res, data, ctrl:** Same as r
 
 [GitHub/AoiSaya](https://github.com/AoiSaya)  
 [Twitter ID @La_zlo](https://twitter.com/La_zlo)
-r.com/La_zlo)
