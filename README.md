@@ -16,7 +16,7 @@ command | description
 --- | ---
 res = I2C:setup( frq )|**I2C interfase setup**<br>**frq:** Clock frequency(kHz). 45 or 100 or 189 or 400
 res = I2C:print( sadr, str )| **I2C print data**<br>**sadr:** slave address (7bit)<br>**str:** strings for write<br>**res:** Same as return value of fa.i2c()
-res = I2C:write( sadr, adr, d1, d2, ... )| **I2C write data**<br>**sadr:** slave address (7bit)<br>**adr:** address<br>**d1, d2, ... :** numbers for write<br>**res:** Same as return value of fa.i2c()
+res = I2C:write( sadr, d1, d2, ... )| **I2C write data**<br>**sadr:** slave address (7bit)<br>**d1, d2, ... :** data for write<br>**res:** Same as return value of fa.i2c()
 res, str = I2C:scan( sadr, len )|**I2C read string**<br>**sadr:** slave address (7bit)<br>**len:** length<br>**res:** Same as return value of fa.i2c()<br>**str:** strings
 res, d1, d2, ... = I2C:read( sadr, len )|**I2C read data**<br>**sadr:** slave address (7bit)<br>**len:** length<br>**res:** Same as return value of fa.i2c()<br>**d1, d2, ... :** numbers
 ret, tbl = I2C:readt( sadr, len )|**I2C read table**<br>**sadr:** slave address (7bit)<br>**len:** length<br>**res:** Same as return value of fa.i2c()<br>**tbl:** table of numbers
