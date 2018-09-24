@@ -25,7 +25,7 @@ res, d1, d2, ... = I2C:wread( sadr, adr, len )|**I2C read data after write adr**
 ret, tbl = I2C:wreadt( sadr, adr, len )|**I2C read table after write address**<br>**sadr:** slave address (7bit)<br>**adr:** address<br>**len:** length<br>**res:** Same as return value of fa.i2c()<br>**tbl:** table of numbers
 res = I2C:setpio( dat )|**I2C set pio**<br>**dat:** write data<br>**res:** Same as return value of fa.i2c()
 res, data, ctrl = I2C:getpio()|**I2C get pio**<br>**res, data, ctrl:** Same as return value of fa.i2c()
-
+res, sadr = I2C:sascan( adrTbl, idAdr, id )<br><br>or<br><br>res, sadr = I2C:sascan( adrTbl, idAdr, id, tryCount, waitTime )|**I2C slave address scan**<br>**adrTbl:** slave address table<br>**idAdr:** ID address<br>**id:** ID data<br>**tryCount:** Try count (nil for 5)<br>**waitTime:**　wait time[ms] (nil for 1)<br><br>**res:** Same as return value of fa.i2c()<br>**sadr:** slave address or 0xFF at I2C error
 ## Licence
 
 [MIT](https://github.com/AoiSaya/FlashAir-libBMP/blob/master/LICENSE)
